@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background: #333;
+    height: 90px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+}
+a.active,a:hover{
+    background: #444;
+    color: gold;
+}
+.checkbtn{
+    font-size: 35px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .ul0{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(44, 8, 8);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 27px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        background: #444;
+        color: gold;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.section1{
+    background-image: url('../img/section1.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.bookbtn{
+    padding: 20px 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.bookbtn a{
+    color: white;
+}
+.bookbtn:hover, .bookbtn a:hover{
+    background: #444;
+    color: gold;
+    font-weight: bold;
+}
+.tm-main {
+    background: #333;
+    padding: 2%;
+}
+
+.tm-main p {
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 4vw;
+    padding: 2%;
+    color: #fff;
+    font-weight: 700;
+}
+/* */
+.tm-roomsection {
+    display: flex;
+}
+
+.tm-room1 {
+    max-width: 33.33333%;
+    width: 33.333333%;
+    background: #353535;
+
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.tm-room1 p {
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+    z-index: 2;
+    position: relative;
+}
+
+
+.tm-roomimage {
+    max-width: 100%;
+    width: 100%;
+}
+
+.tm-trans {
+    display: inline-block;
+    position: absolute;
+    top: 78%;
+    /*78*/
+    color: #fff;
+    max-width: 100%;
+    width: 100%;
+    height: 0%;
+    /*0*/
+    background: rgba(53, 53, 53, 0.7);
+    opacity: 0;
+    /*0*/
+}
+
+.tm-trans p {
+    font-size: 1.8vw;
+
+}
+
+.tm-trans div {
+    display: inline-table;
+    width: 40%;
+    max-width: 40%;
+    margin: 2%;
+}
+
+.tm-trans div .bold {
+    color: #ff8d9a;
+
+}
+
+
+.tm-room1:hover .tm-trans {
+
+    top: 30%;
+
+    transition: top 1s, opacity 1s, height 1s;
+    opacity: 1;
+    height: 50%;
+    z-index: 1;
+}
+/* */
+
+.tm-res {
+    background: #cc4151;
+    padding: 2%;
+}
+
+
+.tm-resbutton p {
+    display: table;
+    max-width: 30%;
+    margin: 0 auto;
+    font-size: 2.5vw;
+    padding: 2%;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #fff;
+
+}
+
+.tm-resbutton a {
+    text-decoration: none;
+}
+
+.tm-resbutton p:hover {
+    color: #ec3c6a;
+    background: #fff;
+}
+/* */
+.footer{
+    background: #24262b;
+    min-height: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footersection{
+    padding-right: 90px;
+    margin-bottom: 30px;
+    width: 25%;
+}
+.footersection h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.footersection h5, p{
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    line-height: 30px;
+}
+.footersection ul li a{
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    line-height: 28px;
+}
+.footersection ul li a:hover{
+    background: #444;
+    color: gold;
+}
+@media(max-width: 952px){
+    .footersection{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }

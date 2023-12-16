@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background: #333;
+    height: 90px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+}
+a.active,a:hover{
+    background: #444;
+    color: gold;
+}
+.checkbtn{
+    font-size: 35px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .ul0{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(44, 8, 8);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 27px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active,a:hover{
+        background: #444;
+        color: gold;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+.section1{
+    background-image: url('../img/section1.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.bookbtn{
+    padding: 20px 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.bookbtn a{
+    color: white;
+}
+.bookbtn:hover, .bookbtn a:hover{
+    background: #444;
+    color: gold;
+    font-weight: bold;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    background: black;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: rgb(179, 179, 179);
+    width: 300px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.card h2{
+    padding: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.cardimage1{
+    height: 150px;
+    margin-bottom: 20px;
+    background-image: url('../img/room1.jpg');
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.cardimage2{
+    height: 150px;
+    margin-bottom: 20px;
+    background-image: url('../img/room2.jpg');
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.cardimage3{
+    height: 150px;
+    margin-bottom: 20px;
+    background-image: url('../img/room3.jpg');
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.footer{
+    background: #24262b;
+    min-height: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footersection{
+    padding-right: 90px;
+    margin-bottom: 30px;
+    width: 25%;
+}
+.footersection h4{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.footersection h5, p{
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    line-height: 30px;
+}
+.footersection ul li a{
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    line-height: 28px;
+}
+.footersection ul li a:hover{
+    background: #444;
+    color: gold;
+}
+@media(max-width: 952px){
+    .footersection{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+
+  .btn12,
+  .delete-btn12{
+     width: 80%;
+     border-radius: 5px;
+     padding:10px 30px;
+     color: white;
+     display: block;
+     text-align: center;
+     cursor: pointer;
+     font-size: 20px;
+     margin-top: 10px;
+  }
+  
+  .btn12{
+     background-color: #3498db;
+  }
+  
+  .btn12:hover{
+     background-color: #2980b9;
+  }
+  
+  .delete-btn12{
+     background-color: red;
+  }
+  
+  .delete-btn12:hover{
+     background-color: #c0392b;
+  }
+  
+  .message{
+     margin:10px 0;
+     width: 100%;
+     border-radius: 5px;
+     padding:10px;
+     text-align: center;
+     background-color: red;
+     color: white;
+     font-size: 20px;
+  }
+
+  .form-container12{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .form-container12 form{
+    padding:20px;
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    border-radius: 5px;
+ }
+ 
+ .form-container12 form h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #333;
+ }
+ 
+ .form-container12 form .box12{
+    width: 80%;
+    border-radius: 5px;
+    padding:12px 14px;
+    font-size: 18px;
+    color: #333;
+    margin:10px 0;
+    background-color: #eee;
+ }
+ 
+ .form-container12 form p{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+ }
+ 
+ .form-container12 form p a{
+    color: red;
+ }
+
+ .container12{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .container12 .profile{
+    padding:20px;
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+ }
+ 
+ .container12 .profile h3{
+    margin:5px 0;
+    font-size: 20px;
+    color: #333;
+ }
+ 
+ .container12 .profile p{
+    margin-top: 20px;
+    color: #333;
+    font-size: 20px;
+ }
+ 
+ .container12 .profile p a{
+    color: red;
+ }
+
+ .update-profile12{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .update-profile12 form{
+    padding:20px;
+    background-color: white;
+    text-align: center;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+ }
+ 
+ .update-profile12 form .flex12{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+ 
+ .update-profile12 form .flex12 .inputBox12{
+    width: 49%;
+ }
+ 
+ .update-profile12 form .flex12 .inputBox12 h4{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color: #333;
+ }
+ 
+ .update-profile12 form .flex12 .inputBox12 .box12{
+    width: 80%;
+    border-radius: 30px;
+    background-color: #eee;
+    padding:12px 14px;
+    font-size: 15px;
+    color: #333;
+    margin-top: 10px;
+ }
+
+ .decidebtn{
+    width: 25%;
+    border-radius: 5px;
+    padding:5px 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 5px;
+ }
